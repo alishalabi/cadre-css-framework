@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Nato Sans";
+  src: url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+}
+
+
+body {
+  font-family: "Nato Sans";
+  /* background-color: red; */
+}
