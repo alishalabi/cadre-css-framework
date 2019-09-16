@@ -97,3 +97,16 @@ a:active {
   90% { transform: skewX(0deg); }
   100% { transform: skewX(0deg); } */
 }
+
+input[type=text],
+input[type=email],
+input[type=password],
+label>textarea {
+
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1em;
+  box-shadow: 2px 1px;
+  display: block;
+
+}
