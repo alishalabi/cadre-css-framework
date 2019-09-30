@@ -1,6 +1,7 @@
 :root {
   --bg-color: #FAF7EF;
   --fg-color: #323639;
+  --quote-bg-color: #B2A480;
   --red: #e61935;
   --font-size: 18px;
 }
@@ -54,7 +55,7 @@ em {
 }
 
 mark {
-  background-color: #FDEB35;
+  background-color: #f7e180;
   font-weight: 600;
 }
 
@@ -74,7 +75,7 @@ a:link {
 }
 
 a:visited {
-  color: #6307fb;
+  color: #8e659c;
 }
 
 a:hover {
@@ -98,6 +99,22 @@ a:active {
   100% { transform: skewX(0deg); } */
 }
 
+blockquote {
+  background: var(--quote-bg-color);
+  border-left: 10px solid #878682;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  /* quotes: "\201C""\201D""\2018""\2019"; */
+}
+
+hr {
+  border-top: 3px double;
+  color: var(--fg-color);
+}
+
+
+/* *** Begin Control Flow *** */
+
 input[type=text],
 input[type=email],
 input[type=password],
@@ -108,5 +125,45 @@ label>textarea {
   font-size: 1em;
   box-shadow: 2px 1px;
   display: block;
+
+}
+
+
+/* *** Begin Navbar and Footer *** */
+.custom-navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: gray;
+  color: white;
+  padding: 0;
+  height: 4em;
+}
+
+.custom-navbar > ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+
+.custom-navbar > ul > li > a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.25em;
+  color: white;
+}
+
+.custom-navbar > ul > li > a:hover {
+  background-color: #B2A480;
+}
+
+
+.custom-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-footer > ul {
 
 }
