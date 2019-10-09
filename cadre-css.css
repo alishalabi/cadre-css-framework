@@ -128,6 +128,19 @@ label>textarea {
 
 }
 
+.switch-2 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .switch-2 input {
   position: absolute;
   opacity: 0;
@@ -145,6 +158,35 @@ label>textarea {
   background-color: #eee;
 }
 
+.switch-2:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.switch-2 input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.switch-2 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.switch-2 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
 
 /* *** Begin Navbar and Footer *** */
